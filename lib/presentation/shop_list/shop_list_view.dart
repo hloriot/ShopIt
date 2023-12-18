@@ -172,7 +172,7 @@ class ShopListView extends StatelessWidget {
                 Container(
                   width: 100,
                   height: 5,
-                  color: Theme.of(context).primaryColor,
+                  color: Theme.of(context).colorScheme.primary,
                 ),
                 const SizedBox(height: 10),
                 Text(shop.address),
@@ -217,11 +217,11 @@ class ShopListView extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(Icons.phone, color: Theme.of(context).primaryColor),
+        Icon(Icons.phone, color: Theme.of(context).colorScheme.primary),
         Text(
           phoneNumber,
           style: TextStyle(
-            color: Theme.of(context).primaryColor,
+            color: Theme.of(context).colorScheme.primary,
             fontWeight: FontWeight.bold,
           ),
         ),
