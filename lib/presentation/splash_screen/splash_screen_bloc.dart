@@ -30,7 +30,8 @@ class SplashScreenBloc extends Bloc<SplashScreenEvent, SplashScreenState> {
     if (await _permissionManager.isPermissionGranted(Permission.location)) {
       emit(SplashScreenStateFinished());
     } else {
-      // emit error
+      // We can also display an error at the bottom of the page
+      emit(SplashScreenStateFinished());
     }
   }
 }

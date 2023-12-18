@@ -34,12 +34,12 @@ class ShopListView extends StatelessWidget {
                 _header(context, state),
                 const SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.all(8),
+                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: Text(
                     "Le plus proche".toUpperCase(),
                     style: TextStyle(
                       fontSize: 12,
-                      color: Theme.of(context).primaryColor,
+                      color: Theme.of(context).colorScheme.primary,
                     ),
                   ),
                 ),

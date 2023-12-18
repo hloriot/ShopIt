@@ -21,18 +21,27 @@ class SplashScreenView extends StatelessWidget {
             );
         }
       },
-      child: const Scaffold(
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Row(
-              children: [Spacer()],
+      child: Scaffold(
+        body: SizedBox(
+          width: double.infinity,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 64, horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Spacer(),
+                Text(
+                  "shop it",
+                  style: TextStyle(
+                    fontSize: 64,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                ),
+                const Spacer(),
+                const CircularProgressIndicator(strokeWidth: 6),
+              ],
             ),
-            Spacer(),
-            Text("Shop it"),
-            Spacer(),
-            CircularProgressIndicator(),
-          ],
+          ),
         ),
       ),
     );
